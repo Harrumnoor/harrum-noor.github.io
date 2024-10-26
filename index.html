@@ -4,75 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrum Noor - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
+        /* Basic Styling */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
             color: #333;
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
         }
-        
+
         .container {
-            max-width: 800px;
-            margin: auto;
+            width: 600px;
             padding: 20px;
         }
-        
+
         h1, h2 {
             color: #333;
+            font-weight: normal;
         }
 
-        /* Header */
-        .header {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 0.2em;
         }
 
-        /* Sections */
         .section {
-            padding: 20px 0;
+            margin-bottom: 20px;
             border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
         }
 
-        /* Links */
+        /* Link Styling */
         a {
             color: #007acc;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
-        }
-
-        /* Contact Button */
-        .contact-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: white;
-            background-color: #007acc;
-            border-radius: 5px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-
         <!-- Header Section -->
-        <div class="header">
-            <img src="Harrum-1.jpg" alt="Harrum Noor" class="profile-photo">
+        <div class="section" style="text-align: center;">
             <h1>Harrum Noor</h1>
             <p>Graduate Student | Data Engineer | Research Assistant</p>
         </div>
@@ -80,40 +60,23 @@
         <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
-            <p>Hello! I'm a graduate student at the University of Waterloo specializing in Machine Learning for Databases. With a strong foundation in data engineering and research, I'm passionate about improving human-database interactions using Natural Language Processing (NLP) and Large Language Models (LLMs).</p>
+            <p>I am a graduate student at the University of Waterloo specializing in Machine Learning for Databases. My research focuses on enhancing human-database interactions using NLP and Large Language Models.</p>
         </div>
 
         <!-- Experience Section -->
         <div class="section">
             <h2>Experience</h2>
             <p><strong>Research Assistant</strong> - University of Waterloo (Sep 2023 - Present)</p>
-            <p>Conducting ML4DB research, focusing on NLP and LLMs for improved database interactions using HuggingFace and TensorFlow.</p>
-
             <p><strong>Data Engineer</strong> - Teradata (Oct 2021 - Aug 2023)</p>
-            <p>Designed data pipelines, automated ETL processes, and improved uptime by 25% for major European retail clients.</p>
-
             <p><strong>DevOps Engineer</strong> - IBM (Jan 2021 - Oct 2021)</p>
-            <p>Enhanced customer engagement for telco clients through strategic DevOps solutions and reduced deployment time by 25%.</p>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Spam Call Detector App</strong> - An Android app to detect and interact with potential spam calls.</li>
-                <li><strong>Door Decorating Contest Platform</strong> - A platform for contest submissions through photo uploads.</li>
-                <li><strong>Hackathon Projects</strong> - Explored ideas around LLMs and accessible art.</li>
-            </ul>
         </div>
 
         <!-- Contact Section -->
         <div class="section">
             <h2>Contact</h2>
-            <p>Feel free to reach out via email or connect on LinkedIn:</p>
-            <a href="mailto:harrum.noor@uwaterloo.ca" class="contact-button">Email Me</a>
-            <p><a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn Profile</a> | <a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
+            <p>Email: <a href="mailto:harrum.noor@uwaterloo.ca">harrum.noor@uwaterloo.ca</a></p>
+            <p><a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn</a> | <a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
         </div>
-
     </div>
 
 </body>
