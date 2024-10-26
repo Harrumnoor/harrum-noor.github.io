@@ -4,148 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrum Noor - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic Styling */
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4a90e2, #50c9c3);
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            color: #333;
+            line-height: 1.6;
         }
-
+        
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
-            background: #fff;
-            border-radius: 10px;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        header, section {
-            text-align: center;
-            margin-bottom: 20px;
+        /* Sections */
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
 
-        img.profile {
-            width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 10px auto;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            font-size: 2em;
-            color: #4a90e2;
-        }
-
-        .section-title {
-            font-size: 1.5em;
-            color: #50c9c3;
-            border-bottom: 2px solid #4a90e2;
-            display: inline-block;
-            margin: 0 auto 10px;
-            padding-bottom: 5px;
-        }
-
-        .experience, .skills, .education {
-            text-align: left;
-            margin: 10px 0;
-            padding: 0 20px;
-        }
-
-        .experience-item {
-            margin-bottom: 15px;
-        }
-
-        .experience-item h3, .skills ul, .education p {
-            margin: 5px 0;
-        }
-
-        .contact {
-            background: #4a90e2;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        
+        /* Links */
         a {
-            color: #50c9c3;
+            color: #007acc;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Button */
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007acc;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <img src="Harrum-2.jpg" alt="Harrum Noor" class="profile">
+
+        <!-- Header Section -->
+        <div class="header">
+            <img src="Harrum-1.jpg" alt="Harrum Noor" class="profile-photo">
             <h1>Harrum Noor</h1>
-            <p>Data Systems Researcher | Machine Learning Enthusiast | Data Engineer</p>
-        </header>
+            <p>Graduate Student | Data Engineer | Research Assistant</p>
+        </div>
 
-        <section>
-            <div class="section-title">About Me</div>
-            <p>Hello! I'm a graduate student at the University of Waterloo, specializing in Machine Learning for Databases (ML4DB). I am passionate about improving human-database interactions through NLP and LLMs. I have a strong background in data engineering and systems, gained through extensive experience in roles at Teradata, IBM, and as a Research Assistant at the Data Systems Group.</p>
-        </section>
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a graduate student at the University of Waterloo specializing in Machine Learning for Databases. With a strong foundation in data engineering and research, I'm passionate about improving human-database interactions using Natural Language Processing (NLP) and Large Language Models (LLMs).</p>
+        </div>
 
-        <section>
-            <div class="section-title">Experience</div>
-            <div class="experience">
-                <div class="experience-item">
-                    <h3>Research Assistant - University of Waterloo</h3>
-                    <p><strong>September 2023 - Present, Ontario, Canada</strong></p>
-                    <ul>
-                        <li>Conducting research in ML4DB, focusing on NLP and LLMs for enhanced database interactions.</li>
-                        <li>Utilizing HuggingFace and TensorFlow for applied ML research.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Data Engineer - Teradata</h3>
-                    <p><strong>October 2021 - August 2023, Islamabad, Pakistan</strong></p>
-                    <ul>
-                        <li>Designed and automated data pipelines using Teradata, increasing ETL speed by 20%.</li>
-                        <li>Improved process uptime by 25% through automation and quality assurance.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>DevOps Engineer - IBM</h3>
-                    <p><strong>January 2021 - October 2021, Islamabad, Pakistan</strong></p>
-                    <ul>
-                        <li>Enhanced customer retention by 50% through development of interactive strategies for telco clients.</li>
-                        <li>Reduced production deployment time by 25%.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <!-- Experience Section -->
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>Research Assistant</strong> - University of Waterloo (Sep 2023 - Present)</p>
+            <p>Conducting ML4DB research, focusing on NLP and LLMs for improved database interactions using HuggingFace and TensorFlow.</p>
 
-        <section>
-            <div class="section-title">Skills</div>
-            <div class="skills">
-                <ul>
-                    <li>Programming: Python, Java, Scala, Shell Scripting</li>
-                    <li>Frameworks: TensorFlow, HuggingFace, Apache Spark, Flink, Kafka</li>
-                    <li>Tools: Teradata, Apache Airflow, IBM DataStage</li>
-                    <li>Other: ETL, ELT, Big Data, LLMs</li>
-                </ul>
-            </div>
-        </section>
+            <p><strong>Data Engineer</strong> - Teradata (Oct 2021 - Aug 2023)</p>
+            <p>Designed data pipelines, automated ETL processes, and improved uptime by 25% for major European retail clients.</p>
 
-        <section>
-            <div class="section-title">Education</div>
-            <div class="education">
-                <p><strong>Master of Math in Computer Science</strong> - University of Waterloo, Ontario, Canada</p>
-                <p><strong>Bachelor of Computer Science</strong> - National University of Computer and Emerging Sciences, Islamabad, Pakistan</p>
-            </div>
-        </section>
+            <p><strong>DevOps Engineer</strong> - IBM (Jan 2021 - Oct 2021)</p>
+            <p>Enhanced customer engagement for telco clients through strategic DevOps solutions and reduced deployment time by 25%.</p>
+        </div>
 
-        <section>
-            <div class="contact">
-                <p>📧 <a href="mailto:harrum.noor@uwaterloo.ca">harrum.noor@uwaterloo.ca</a> | 🌐 <a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn</a> | 🏆 <a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
-            </div>
-        </section>
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Spam Call Detector App</strong> - An Android app to detect and interact with potential spam calls.</li>
+                <li><strong>Door Decorating Contest Platform</strong> - A platform for contest submissions through photo uploads.</li>
+                <li><strong>Hackathon Projects</strong> - Explored ideas around LLMs and accessible art.</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email or connect on LinkedIn:</p>
+            <a href="mailto:harrum.noor@uwaterloo.ca" class="contact-button">Email Me</a>
+            <p><a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn Profile</a> | <a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
+        </div>
+
     </div>
 
 </body>
