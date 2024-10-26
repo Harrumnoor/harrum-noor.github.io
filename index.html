@@ -4,77 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Harrumnoor</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+        /* Background & Basic Styling */
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e66465, #9198e5);
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
             text-align: center;
+            color: white;
+            margin-top: 50px;
         }
+
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
-        .content {
-            padding: 2em;
-            line-height: 1.6;
-        }
+
+        /* Profile Image with Hover Animation */
         img.profile {
             width: 150px;
+            height: 150px;
             border-radius: 50%;
             display: block;
-            margin: 1em auto;
+            margin: 20px auto;
+            border: 5px solid #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        img.profile:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Headings */
         h1, h2 {
             text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Adding animation for fade-in effect */
+        .content {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Links */
+        a {
+            color: #e66465;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Page</h1>
-        <p>A glimpse into my research and interests</p>
+        <h1>Welcome to My Personal Page</h1>
+        <p>Explore my research, achievements, and interests</p>
     </header>
 
     <div class="container">
-        <img src="harrum-1.jpg" alt="My Photo" class="profile">
-        <!-- Placeholder for photo - replace "path/to/your/photo.jpg" with the actual path when you add an image -->
+        <img src="https://via.placeholder.com/150" alt="My Photo" class="profile">
+        <!-- Placeholder for photo - replace with your image path -->
 
         <div class="content">
             <h2>About Me</h2>
-            <p>Hello! I’m Noor, a graduate student researcher specializing in Natural Language to SQL (NL2SQL) translation using Large Language Models (LLMs). Currently, I’m pursuing my graduate studies in Computer Science at the University of Waterloo, with a focus on data and machine learning applications.</p>
+            <p>Hello! I’m Noor, a graduate student researcher at the University of Waterloo. My focus is on Natural Language to SQL (NL2SQL) translation using Large Language Models. I am passionate about developing technology that bridges human language with data analytics.</p>
 
             <h2>Research Focus</h2>
-            <p>My research centers on model-free reinforcement learning for dynamic portfolio optimization, and NL2SQL translation using BERT. I’m particularly interested in evaluating NL2SQL translations, improving the accuracy of these models, and exploring how BERT-based models can enhance natural language interactions with databases.</p>
+            <p>Currently, my research focuses on model-free reinforcement learning for dynamic portfolio optimization and evaluating NL2SQL translations using BERT. I’m exploring how BERT-based models enhance natural language interactions with databases.</p>
 
             <h2>Achievements & Roles</h2>
             <ul>
                 <li>Vice President of the CSGSA at the University of Waterloo.</li>
-                <li>Active member of WiNS Waterloo and advocate for Women in STEM and Women in Tech communities.</li>
-                <li>Currently experimenting with data augmentation techniques in NL2SQL and working on building a more holistic dataset.</li>
+                <li>Active member of WiNS Waterloo and advocate for Women in STEM.</li>
+                <li>Working on data augmentation techniques in NL2SQL to capture the diversity of language expressions.</li>
             </ul>
 
             <h2>Recent Projects</h2>
             <ul>
-                <li>Developed a spam call detector app for Android.</li>
-                <li>Created a door-decorating contest platform to engage participants through photo submissions.</li>
-                <li>Participated in Hack the North, where I explored ideas related to LLMs and accessible art.</li>
+                <li>Spam call detector app for Android.</li>
+                <li>Door-decorating contest platform to engage users through photo uploads.</li>
+                <li>Hackathon projects exploring LLMs and accessible art for all audiences.</li>
             </ul>
 
             <h2>Get in Touch</h2>
-            <p>You can reach out to me through my <a href="https://github.com/Harrumnoor">GitHub profile</a> or connect with me on LinkedIn (link your LinkedIn if you have one).</p>
+            <p>Connect with me on <a href="https://github.com/Harrumnoor">GitHub</a> or LinkedIn.</p>
         </div>
     </div>
+
 </body>
 </html>
-
-
