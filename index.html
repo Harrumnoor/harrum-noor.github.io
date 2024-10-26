@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrum Noor - Portfolio</title>
     <style>
-        /* Basic Styling */
+        /* Basic styling for body and layout */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,123 +17,172 @@
         }
 
         .container {
-            width: 600px;
+            display: flex;
+            max-width: 1200px;
+            margin: 20px;
             padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
-            color: #333;
-            font-weight: normal;
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            padding: 20px;
+            border-right: 1px solid #ddd;
         }
 
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 0.2em;
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
         }
 
-        .section {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+        .sidebar h2 {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 0;
         }
 
-        /* Link Styling */
-        a {
+        .sidebar p {
+            text-align: center;
+            color: #555;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .contact-info a {
             color: #007acc;
             text-decoration: none;
         }
 
+        /* Main content styling */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .content h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        /* Link styling */
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
         a:hover {
             text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Header Section -->
-        <div class="section" style="text-align: center;">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <img src="Harrum-1.jpg" alt="Harrum Noor">
+            <h2>Harrum Noor</h2>
+            <p>MMath Student | Data Engineer | Research Assistant</p>
+            <div class="contact-info">
+                <p>📍 Waterloo, Canada</p>
+                <p>🏫 University of Waterloo</p>
+                <p>📧 <a href="mailto:harrum.noor@uwaterloo.ca">Email</a></p>
+                <p><a href="https://github.com/Harrumnoor">GitHub</a></p>
+                <p><a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn</a></p>
+                <p><a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="content">
             <h1>Harrum Noor</h1>
-            <p>Graduate Student | Data Engineer | Research Assistant</p>
-        </div>
+            <p>I am a Master’s student at the University of Waterloo, supervised by Dr. M. Tamer Özsu and part of the Data Systems Group, one of North America’s premier research collectives in data systems. My research focuses on enhancing human-database interactions using Large Language Models, currently working on NL2SQL systems. Beyond my academic pursuits, I enjoy playing video games, painting on glass, and traveling. A fun fact about me: I once traveled across three continents in just three days!</p>
 
-        <!-- About Section -->
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I am a Master’s student at the University of Waterloo, supervised by Dr. M. Tamer Özsu. I am part of the Data Systems Group, one of North America’s premier research collectives in data systems. My research focuses on enhancing human-database interactions using Large Language Models, with a current emphasis on NL2SQL systems. Beyond my academic pursuits, I enjoy playing video games (currently immersed in *The Legend of Zelda: Tears of the Kingdom*), painting on glass (I’ve built a collection of stained glass pieces, all hand-painted), and traveling. A fun fact about me: I once traveled across three continents in just three days!</p>
-        </div>
-
-        <!-- Education Section -->
-        <div class="section">
+            <!-- Education Section -->
             <h2>Education</h2>
-            <p><strong>MMath in Computer Science</strong>, University of Waterloo, expected 2025</p>
-            <p><strong>B.S. in Computer Science</strong>, National University of Computer and Emerging Sciences, 2018</p>
-        </div>
+            <ul>
+                <li><strong>MMath in Computer Science</strong>, University of Waterloo, expected 2025</li>
+                <li><strong>B.S. in Computer Science</strong>, National University of Computer and Emerging Sciences, 2018</li>
+            </ul>
 
-        <!-- Work Experience Section -->
-        <div class="section">
+            <!-- Work Experience Section -->
             <h2>Work Experience</h2>
-            <p><strong>Data Engineer @ Teradata</strong>, 2021 - 2023</p>
             <ul>
-                <li>Designed and developed data pipelines and data architecture for a major European retail chain.</li>
+                <li><strong>Data Engineer @ Teradata</strong>, 2021 - 2023
+                    <ul>
+                        <li>Designed and developed data pipelines and data architecture for a major European retail chain.</li>
+                    </ul>
+                </li>
+                <li><strong>Software Engineer @ IBM</strong>, 2018 - 2021
+                    <ul>
+                        <li>Created ETL pipelines for a Middle Eastern telecom client.</li>
+                        <li>Worked on IBM's flagship tool for detecting the heartbeat of devices globally.</li>
+                    </ul>
+                </li>
+                <li><strong>Instructional Apprentice and Teaching Assistant @ University of Waterloo</strong>, 2023 - Present
+                    <ul>
+                        <li>Teaching Assistant for CS135 (Functional Programming), CS348 (Database Applications), CS338 (Databases).</li>
+                        <li>Instructional Apprentice for CS431 (Data-Intensive Distributed Systems).</li>
+                    </ul>
+                </li>
             </ul>
-            
-            <p><strong>Software Engineer @ IBM</strong>, 2018 - 2021</p>
-            <ul>
-                <li>Created ETL pipelines for a Middle Eastern telecom client.</li>
-                <li>Worked on IBM's flagship tool for detecting the heartbeat of devices globally.</li>
-            </ul>
-            
-            <p><strong>Instructional Apprentice and Teaching Assistant @ University of Waterloo</strong>, 2023 - Present</p>
-            <ul>
-                <li>Teaching Assistant for courses: CS135 (Functional Programming), CS348 (Database Applications), CS338 (Databases).</li>
-                <li>Instructional Apprentice for CS431 (Data-Intensive Distributed Systems).</li>
-            </ul>
-        </div>
 
-        <!-- Volunteering and Other Activities Section -->
-        <div class="section">
+            <!-- Volunteering and Other Activities Section -->
             <h2>Volunteering and Other Activities</h2>
-            
-            <p><strong>Mentor, Computing Research Association (CRA) UR2PhD Program</strong></p>
             <ul>
-                <li>Currently mentoring three undergraduate students in the data systems domain, guiding them in research projects and academic growth.</li>
-                <li>Helping students develop strong foundations in data systems research, focusing on technical skills and research methodologies.</li>
+                <li><strong>Mentor, Computing Research Association (CRA) UR2PhD Program</strong>
+                    <ul>
+                        <li>Currently mentoring three undergraduate students in the data systems domain, guiding them in research projects and academic growth.</li>
+                    </ul>
+                </li>
+                <li><strong>Vice President, Computer Science Graduate Student Association (CSGSA)</strong>
+                    <ul>
+                        <li>Organizing events, enhancing the department’s website, and promoting equity and diversity.</li>
+                    </ul>
+                </li>
+                <li><strong>Equity and Diversity Initiatives</strong>
+                    <ul>
+                        <li>Active participant in Women in Computer Science Waterloo, Women in Tech at IBM, and Women of Teradata.</li>
+                    </ul>
+                </li>
             </ul>
 
-            <p><strong>Vice President, Computer Science Graduate Student Association (CSGSA)</strong></p>
-            <ul>
-                <li>Organizing events, enhancing the department’s website, and fostering social connections among graduate students.</li>
-                <li>Actively working to promote equity and diversity in the department, creating an inclusive environment for all students.</li>
-            </ul>
-
-            <p><strong>Equity and Diversity Initiatives</strong></p>
-            <ul>
-                <li>Active participant in <strong>Women in Computer Science Waterloo</strong> and <strong>Women in Tech at IBM</strong>, promoting tech opportunities for high school students from marginalized groups through info sessions and panel discussions.</li>
-                <li>Part of <strong>Women of Teradata</strong>, where I help run initiatives aimed at supporting underprivileged women in starting careers in tech and providing mentorship for empowerment in the industry.</li>
-            </ul>
-        </div>
-
-        <!-- Fun Projects Section -->
-        <div class="section">
+            <!-- Fun Projects Section -->
             <h2>Fun Projects</h2>
-            <p><strong><a href="https://github.com/v-kliu/GooseGuard">GooseGuard</a></strong> - A scam call detection engine built to identify and block spoofed calls. This project was built under 36 hours during Hack the North 2024!</p>
-
-            <p><strong><a href="https://github.com/Harrumnoor/TrafficCollisions">Waterloo Traffic Patterns</a></strong> - An analysis of traffic patterns in the Waterloo region using Apache Flink for stream processing. Gain insights on collision hotspots and road conditions.</p>
-
-            <p><strong><a href="https://github.com/Harrumnoor/Vaadin-Activiti-FYP-">Automated Website Generator</a></strong> - A tool that generates websites from BPMN models, utilizing Vaadin and Activiti frameworks for seamless automation.</p>
-
-            <p><strong><a href="https://github.com/Harrumnoor/bertvslog">Confidence Study: LLM vs. Logistic Regression</a></strong> - A study exploring how Large Language Models build more trust than traditional models like logistic regression in NL2SQL tasks.</p>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:harrum.noor@uwaterloo.ca">harrum.noor@uwaterloo.ca</a></p>
-            <p><a href="https://www.linkedin.com/in/harrum-noor/">LinkedIn Profile</a> | <a href="https://credly.com/users/harrum-noor/badges">Certifications</a></p>
+            <ul>
+                <li><strong><a href="https://github.com/v-kliu/GooseGuard">GooseGuard</a></strong> - A scam call detection engine built to identify and block spoofed calls during Hack the North 2024.</li>
+                <li><strong><a href="https://github.com/Harrumnoor/TrafficCollisions">Waterloo Traffic Patterns</a></strong> - Analysis of traffic patterns in Waterloo using Apache Flink for stream processing.</li>
+                <li><strong><a href="https://github.com/Harrumnoor/Vaadin-Activiti-FYP-">Automated Website Generator</a></strong> - Generates websites from BPMN models using Vaadin and Activiti frameworks.</li>
+                <li><strong><a href="https://github.com/Harrumnoor/bertvslog">Confidence Study: LLM vs. Logistic Regression</a></strong> - A study exploring trust in Large Language Models over traditional models like logistic regression.</li>
+            </ul>
         </div>
     </div>
 
 </body>
 </html>
+
 
